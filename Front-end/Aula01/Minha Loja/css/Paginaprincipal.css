@@ -1,0 +1,23 @@
+:root {
+--color1: #300d28;
+--color2: #70615c ;
+--color3: #8ca38b ;
+--color4: #f7eeaa ;
+--color5: #edb552 ;
+
+}
+
+h1,footer {
+    text-align: center; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li{
+    margin: 15px;
+}
+    
