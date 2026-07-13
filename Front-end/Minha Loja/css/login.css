@@ -1,0 +1,84 @@
+:root {
+--color0: #53042c;
+--color1: #300d28;
+--color2: #70615c;
+--color3: #8ca38b;
+--color4: #f7eeaa;
+--color5: #edb552;
+--color6: #bb2649;
+--color7: #0c8e6b;
+
+}
+
+html {
+    background-color: #8ca38b;
+    color: whitesmoke;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 90%;
+    min-width: 28.125vh;
+    max-width: 35em;
+    background-color: #0e1010;
+    padding: 1em;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+label,input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+input { 
+    background-color: rgba(0,0,0,0.3);
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    padding: .75;
+    margin: .5em 0 2.5em;
+    color: white;
+    outline: 0;
+}
+
+input:invalid:focus{
+    border-bottom: 2px solid #bb2649;
+}
+
+input:valid:focus{
+    border-bottom: 2px solid #0c8e6b;
+}
+
+.form_action{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form_action_aside{
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #bb2649;
+}
+
+legend{
+    text-align: center;
+    font-size: 25px;
+}

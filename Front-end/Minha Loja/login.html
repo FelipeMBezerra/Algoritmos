@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<!-- ver pq o "text-align: center;" não funciona no legend -->
+<body>
+    <form action="" autocomplete="off">
+        <fieldset>
+        <legend>Login</legend>
+        <br>
+        <label for="email" class="input-info">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="Digite seu email">
+        <br>
+        <br>
+        <label for="password" class="input-info">Passaword:</label>
+        <input type="password" name="password" id="password" minlength="7" required placeholder="Digite sua senha">
+        <br>
+        <br>
+        
+        <div class="form_action">
+        <input type="submit" value="Login" class="bnt-primary">
+        <a href="#" class="form_action_aside">Esqueci minha senha</a> <!--lembrar de fazer a pagina de esqueci senha-->
+        </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
