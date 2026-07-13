@@ -79,6 +79,7 @@ input:valid:focus{
 }
 
 legend{
+    width: 100%;
     text-align: center;
     font-size: 25px;
 }
