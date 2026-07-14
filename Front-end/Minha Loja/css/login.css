@@ -11,7 +11,6 @@
 }
 
 html {
-    background-color: #8ca38b;
     color: whitesmoke;
 }
 
@@ -21,14 +20,76 @@ body{
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+    position: relative;
+    z-index: 0;
 }
 
-form{
-    width: 90%;
-    min-width: 28.125vh;
-    max-width: 35em;
-    background-color: #0e1010;
-    padding: 1em;
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: 
+    radial-gradient(circle at 20% 20%, #969696 0%, transparent 35%),
+    radial-gradient(circle at 80% 20%, #717171 0%, transparent 35%),
+    radial-gradient(circle at 50% 80%, #4b4b4b 0%, transparent 40%),
+    radial-gradient(circle at 15% 85%, #262626 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, #1b1a1a 0%, transparent 35%),
+    #000000;
+
+    filter: blur(70px) saturate(120%);
+    transform: scale(1.15);
+
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+}
+
+.login{
+    width: 500px;
+    padding: 40px;
+    background: linear-gradient(180 deg,
+    rgba(45,45,45,.55),
+    rgba(15,15,15,.75)
+    );
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-radius: 25px;
+
+    border: 1px solid rba(255,255,255,.08);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.08);
+
+    position: relative;
+    z-index: 2;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    
+    background: rgba(255, 255, 255, .08);
+
+    border-radius: 25px 25px 0 0;
+}
+
+.login > *{
+    position: relative;
+    z-index: 2;
 }
 
 fieldset {
@@ -46,14 +107,22 @@ label,input{
 }
 
 
-input { 
-    background-color: rgba(0,0,0,0.3);
-    border: 2px solid transparent;
-    border-bottom-color: #bbb;
-    padding: .75;
-    margin: .5em 0 2.5em;
+input {
+    width: 100%;
+    padding: 12px 0;
+
+    background:transparent ;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.25);
+
     color: white;
-    outline: 0;
+    font-size: 16px;
+ 
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
 }
 
 input:invalid:focus{
@@ -66,16 +135,41 @@ input:valid:focus{
 
 .form_action{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin: 25px 0;
     flex-wrap: wrap;
 }
 
-.form_action_aside{
+.form_action_aside, .remember{
     font-size: .85rem;
     flex-grow: 1;
-    text-align: center;
     text-decoration: none;
     color: #bb2649;
+}
+
+.form_action_aside{
+    text-align: right;
+    transition: .3;
+}
+
+.form_action_aside:hover{
+    color: white;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.remember input{
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color6);
+    background: transparent;
+    cursor: pointer;
 }
 
 legend{

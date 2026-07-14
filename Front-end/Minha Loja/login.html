@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 
-<!-- ver pq o "text-align: center;" não funciona no legend -->
 <body>
-    <form action="" autocomplete="off">
+    <form action="" autocomplete="off" class="login">
         <fieldset>
         <legend>Login</legend>
         <br>
@@ -17,14 +16,21 @@
         <input type="email" name="email" id="email" required placeholder="Digite seu email">
         <br>
         <br>
-        <label for="password" class="input-info">Passaword:</label>
+        <label for="password" class="input-info">Password:</label>
         <input type="password" name="password" id="password" minlength="7" required placeholder="Digite sua senha">
-        <br>
-        <br>
         
         <div class="form_action">
+
+        <label for="remember">
+            <input type="checkbox">
+            Lembra de mim
+        </label>
+         
+        <a href="#" class="form_action_aside">Esqueci minha senha</a> <!--lembrar de fazer a pagina de esqueci senha-->    
+        
+        
         <input type="submit" value="Login" class="bnt-primary">
-        <a href="#" class="form_action_aside">Esqueci minha senha</a> <!--lembrar de fazer a pagina de esqueci senha-->
+        
         </div>
 
         </fieldset>
