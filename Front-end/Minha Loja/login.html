@@ -16,24 +16,53 @@
         <input type="email" name="email" id="email" required placeholder="Digite seu email">
         <br>
         <br>
-        <label for="password" class="input-info">Password:</label>
+        <label for="password" class="input-info">Senha:</label>
+        <div class="password_wrapper">
         <input type="password" name="password" id="password" minlength="7" required placeholder="Digite sua senha">
-        
+        <span class="toggle_password" id="togglepassword" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+
+        <svg class="icon_eye_off" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.6 18.6 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a18.6 18.6 0 0 1-2.16 3.19M14.12 14.12a3 3 0 1 1-4.24-4.24"/> 
+        <line x1="1" y1="1" x2="23" y2="23"/>
+        </svg>
+        </span>
+        </div>
+
         <div class="form_action">
 
-        <label for="remember">
-            <input type="checkbox">
-            Lembra de mim
+        <label for="remember" class="remember">
+            <span class="toggle">
+            <input type="checkbox" id="remember" name="remember">
+            <span class="toggle_slide"></span>
+            </span>
+            Lembre de mim
+            
         </label>
          
-        <a href="#" class="form_action_aside">Esqueci minha senha</a> <!--lembrar de fazer a pagina de esqueci senha-->    
-        
+        <a href="#" class="form_action_aside">Esqueci a senha</a> <!--lembrar de fazer a pagina de esqueci senha-->    
         
         <input type="submit" value="Login" class="bnt-primary">
+
+        <a href="#" class="create_account">Cadastra-se</a>
         
         </div>
 
         </fieldset>
     </form>
+
+    <script>
+    const togglepassword = document.getElementById('togglepassword');
+    const passwordinput = document.getElementById('password');
+
+    togglepassword.addEventListener('click', function(){
+        const isPassword = passwordinput.getAttribute('type') === 'password';
+        passwordinput.setAttribute('type', isPassword ? 'text' : 'password');
+    });
+</script>
+
 </body>
 </html>

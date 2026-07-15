@@ -133,6 +133,44 @@ input:valid:focus{
     border-bottom: 2px solid #0c8e6b;
 }
 
+.password_wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.password_wrapper input{
+    padding-right: 35px;
+}
+
+.toggle_password{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgba(255,255,255,.5);
+}
+
+.toggle_password:hover{
+    color: white;
+}
+
+.toggle_password svg{
+    display: block;
+}
+
+.toggle_password .icon_eye_off{
+    display: none;
+}
+
+.toggle_password.active .icon_eye{
+    display: none;
+}
+
+.toggle_password.active .icon_eye_off{
+    display: block;
+}
+
 .form_action{
     display: flex;
     justify-content: space-between;
@@ -141,11 +179,90 @@ input:valid:focus{
     flex-wrap: wrap;
 }
 
-.form_action_aside, .remember{
-    font-size: .85rem;
+.form_action_aside, .create_account,.remember{
+    font-size: 1.2rem;
     flex-grow: 1;
     text-decoration: none;
     color: #bb2649;
+    line-height: 18px;
+}
+
+.form_action_aside{
+    text-align: right;
+    transition: .3;
+}
+
+.create_account{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form_action_aside:hover, .create_account:hover{
+    color: white;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: auto;
+}
+
+.remember input{
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    accent-color: #bb2649;
+    background: transparent;
+    cursor: pointer;
+}
+
+.toggle{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.toggle input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.toggle_slide{
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, .15);
+    border-radius: 999px;
+    transition: background .3s;
+    cursor: pointer;
+}
+
+.toggle_slide::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    top: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: transform .3s;
+}
+
+.toggle input:checked + .toggle_slide{
+    background: #bb2649;
+}
+
+.toggle input:checked + .toggle_slide::before{
+    transform: translateX(18px);
 }
 
 .form_action_aside{
@@ -176,4 +293,24 @@ legend{
     width: 100%;
     text-align: center;
     font-size: 25px;
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.25);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login:has(input:valid) .bnt-primary:hover{
+    border-bottom: 2px solid #0c8e6b;
+}
+
+.login:has(input:invalid) .bnt-primary:hover{
+    border-bottom: 2px solid #bb2649;
 }
