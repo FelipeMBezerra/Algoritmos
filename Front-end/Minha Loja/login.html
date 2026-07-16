@@ -2,13 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Felipe" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
-    <form action="" autocomplete="off" class="login">
+    <form action="" autocomplete="off" class="login" id="loginForm">
         <fieldset>
         <legend>Login</legend>
         <br>
@@ -20,7 +20,7 @@
         <div class="password_wrapper">
         <input type="password" name="password" id="password" minlength="7" required placeholder="Digite sua senha">
         <span class="toggle_password" id="togglepassword" >
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="icon_eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
             <circle cx="12" cy="12" r="3"></circle>
         </svg>
@@ -47,7 +47,7 @@
         
         <input type="submit" value="Login" class="bnt-primary">
 
-        <a href="#" class="create_account">Cadastra-se</a>
+        <a href="cadastro.html" class="create_account">Cadastra-se</a>
         
         </div>
 
@@ -61,6 +61,7 @@
     togglepassword.addEventListener('click', function(){
         const isPassword = passwordinput.getAttribute('type') === 'password';
         passwordinput.setAttribute('type', isPassword ? 'text' : 'password');
+        togglepassword.classList.toggle('active');
     });
 </script>
 
