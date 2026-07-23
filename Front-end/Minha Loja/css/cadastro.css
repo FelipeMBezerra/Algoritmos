@@ -1,0 +1,53 @@
+:root {
+--color0: #969696;
+--color1: #717171;
+--color2: #4b4b4b;
+--color3: #262626;
+--color4: #1b1a1a;
+--color5: #000000;
+--color6: #bb2649;
+--color7: #0c8e6b;
+
+}
+
+html{
+    color: whitesmoke;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+    position: relative;
+    z-index: 0;
+}
+
+body::befero{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: 
+    radial-gradient(circle at 20% 20%, #969696 0%, transparent 35%),
+    radial-gradient(circle at 80% 20%, #717171 0%, transparent 35%),
+    radial-gradient(circle at 50% 80%, #4b4b4b 0%, transparent 40%),
+    radial-gradient(circle at 15% 85%, #262626 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, #1b1a1a 0%, transparent 35%),
+    #000000;
+
+    filter: blur(70px) saturate(120%);
+    transform: scale(1.15);
+
+    z-index: -1;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(10px);
+}

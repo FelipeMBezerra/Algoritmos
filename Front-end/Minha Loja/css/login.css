@@ -1,10 +1,10 @@
 :root {
---color0: #53042c;
---color1: #300d28;
---color2: #70615c;
---color3: #8ca38b;
---color4: #f7eeaa;
---color5: #edb552;
+--color0: #969696;
+--color1: #717171;
+--color2: #4b4b4b;
+--color3: #262626;
+--color4: #1b1a1a;
+--color5: #000000;
 --color6: #bb2649;
 --color7: #0c8e6b;
 
@@ -48,7 +48,7 @@ body::before{
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,.35);
     backdrop-filter: blur(10px);
 }
 
