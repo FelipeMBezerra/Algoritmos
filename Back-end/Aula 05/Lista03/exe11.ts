@@ -2,6 +2,10 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 11
+//Elaborar um programa que apresente o valor de uma potência de uma base qualquer (Variável b) elevada a um
+//expoente qualquer (Variável e), ou seja, de be
+
+//b^e .(Sem usar Math.pow();)
 
 let k = 1
 let k2 = 2

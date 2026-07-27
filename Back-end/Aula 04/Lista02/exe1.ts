@@ -2,6 +2,8 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 1
+//Desenvolver um programa que pergunte um número. Se este número for maior que 20, então ele deverá exibir a
+//metade deste número, senão, ele deverá exibir o número sem alterações.
 
 let num1 = Number(prompt(`Informe um número:`));
 let n1d = num1 / 2;

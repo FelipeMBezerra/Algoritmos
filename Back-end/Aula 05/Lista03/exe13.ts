@@ -2,6 +2,8 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 13
+//Desenvolver um programa que imprima a tabuada de 3 a 6.
+
 
 let m = 3;
 

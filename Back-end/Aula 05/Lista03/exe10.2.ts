@@ -2,6 +2,7 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 10.2
+//Sem o Math.pow
 
 let j2 = 0
 

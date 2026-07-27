@@ -2,6 +2,7 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 12
+//Desenvolver um programa que pergunte 5 números inteiros e identifique o maior número e o menor número.
 
 let nume1: Number =parseInt(prompt(`Digite o primeiro número inteiro:`));
 let nume2: Number =parseInt(prompt(`Digite o segundo número inteiro:`));

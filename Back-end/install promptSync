@@ -1,0 +1,8 @@
+\\abra o termina e digite
+\\"npm install prompt-sync"
+\\aperte Enter e em seguida digite
+\\npm install --save-dev @types/prompt-sync
+
+\\ aperte enter e teste usando
+\\import promptSync from "prompt-sync"; const prompt = promptSync();
+\\const nome = prompt("Digite seu nome:"); console,log(`Olá ${nome}`)

@@ -2,6 +2,8 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 9
+//Desenvolver um programa que pergunte um número e exiba a informação de que ele é positivo, negativo ou
+//nulo.
 
 let numi5 = Number(prompt(`Coloque um número:`));
 

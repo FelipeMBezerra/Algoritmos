@@ -2,6 +2,8 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 13
+//Desenvolver um programa que pergunte 3 valores (variáveis a, b e c) e ao final apresente-os dispostos em ordem
+//crescente.
 
 let valorNumA = Number(prompt(`Digite o valor de A:`));
 let menorA: number;

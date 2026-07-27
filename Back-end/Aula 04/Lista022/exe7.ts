@@ -2,6 +2,14 @@ import promptSync from "prompt-sync";
 const prompt = promptSync();
 
 //Desafio 7
+//Elabore um programa que pergunte dois números e também qual operação a ser realizada com estes dois
+//números de acordo com a tabela abaixo (esta tabela deve aparecer como menu de escolha para o usuário). Caso
+//o usuário digite um código que não esteja na tabela, informar que o código inserido está errado.
+//Código Operação
+//a Média aritmética entre os números digitados
+//b Diferença do maior pelo menor
+//c Produto entre os números digitados
+//d Divisão do primeiro pelo segundo
 
 let ni1 = Number(prompt(`Informe um número inteiro:`));
 let ni2 = Number(prompt(`Informe outro número inteiro:`));
