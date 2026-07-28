@@ -1,8 +1,8 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 5
 //Fazer um programa que pergunte o salário de um funcionário e apresente este salário com um aumento de 15%.
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let salario = Number(prompt(`Informe seu salário:`));
 let aumento = salario * 0.15;

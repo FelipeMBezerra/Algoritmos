@@ -1,8 +1,8 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 10.2
 //Sem o Math.pow
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let j2 = 0
 

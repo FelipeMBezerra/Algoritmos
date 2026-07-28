@@ -1,4 +1,7 @@
 //Desafio 3
+//Desenvolver um programa que apresente o total da soma dos cinco primeiros números inteiros.
+
+
 
 let i = 0;
 let soma = 0;

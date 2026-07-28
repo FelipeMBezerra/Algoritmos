@@ -1,6 +1,3 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 7
 //Elabore um programa que pergunte dois números e também qual operação a ser realizada com estes dois
 //números de acordo com a tabela abaixo (esta tabela deve aparecer como menu de escolha para o usuário). Caso
@@ -10,6 +7,10 @@ const prompt = promptSync();
 //b Diferença do maior pelo menor
 //c Produto entre os números digitados
 //d Divisão do primeiro pelo segundo
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
+
 
 let ni1 = Number(prompt(`Informe um número inteiro:`));
 let ni2 = Number(prompt(`Informe outro número inteiro:`));

@@ -1,4 +1,8 @@
-//desafio 3
+//Desafio 3
+//Desenvolver um programa que apresente os resultados de uma tabuada de um número qualquer informado
+//pelo usuário.
+
+
 
 let n1 = 5;
 

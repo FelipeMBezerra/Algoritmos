@@ -1,8 +1,8 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 8
 //Desenvolver um programa que pergunte um número inteiro qualquer e verifique se ele está na faixa de 1 a 10.
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let numi4 = Number(prompt(`Coloque um número inteiro:`));
 

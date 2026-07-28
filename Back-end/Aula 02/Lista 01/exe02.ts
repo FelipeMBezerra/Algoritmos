@@ -1,11 +1,10 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 2
 //Elaborar um programa que pergunte quatro valores inteiros e apresente 2 resultados:
 //a) Resultado de suas adições
 //b) Resultado de suas multiplicações
 
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let num1 = Number(prompt (`Informe primeiro número:`));
 let num2 = Number(prompt (`Informe segundo número:`));

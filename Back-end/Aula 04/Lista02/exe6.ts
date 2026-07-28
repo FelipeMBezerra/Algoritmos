@@ -1,9 +1,9 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 6
 //Desenvolver um programa que pergunte dois valores numéricos inteiros e apresente o valor da diferença entre o
 //maior valor e o menor valor lido.
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let numi1 = Number(prompt(`Informe um número inteiro:`));
 let numi2 = Number(prompt(`Informe outro número inteiro:`));

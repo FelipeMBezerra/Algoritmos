@@ -1,3 +1,7 @@
+//Desafio 1
+//Desenvolver um programa que crie uma matriz com 5 linhas e 3 colunas. Pergunte ao usuário o conteúdo desta
+//matriz e ao final exiba a matriz inteira.
+
 let a: number[][] = [
     [1,2,3],
     [4,5,6],

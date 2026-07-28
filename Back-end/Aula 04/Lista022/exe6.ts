@@ -1,6 +1,3 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 6
 //Desenvolver um programa que pergunte o peso de uma pessoa e também pergunte o código do planeta no qual
 //ela gostaria de obter como resposta o valor do seu peso neste referido planeta. As informações da tabela abaixo
@@ -15,6 +12,9 @@ const prompt = promptSync();
 //Para calcular o peso no planeta escolhido, utilize a fórmula pesoNoPlaneta = (pesoNaTerra/10) *
 //gravidadeRelativa. Caso o usuário digite um código que não esteja na tabela, informar que o código inserido
 //está errado.
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let pesot = Number(prompt(`Informe seu peso:`));
 let planeta = Number(prompt(`

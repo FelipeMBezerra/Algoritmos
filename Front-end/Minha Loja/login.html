@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="Felipe" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/login.css">
+        <script src="js/index.js" defer></script>
     <title>Login</title>
 </head>
 
@@ -54,16 +55,6 @@
         </fieldset>
     </form>
 
-    <script>
-    const togglepassword = document.getElementById('togglepassword');
-    const passwordinput = document.getElementById('password');
-
-    togglepassword.addEventListener('click', function(){
-        const isPassword = passwordinput.getAttribute('type') === 'password';
-        passwordinput.setAttribute('type', isPassword ? 'text' : 'password');
-        togglepassword.classList.toggle('active');
-    });
-</script>
 
 </body>
 </html>

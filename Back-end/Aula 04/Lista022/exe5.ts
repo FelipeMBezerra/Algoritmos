@@ -1,9 +1,9 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 5
 //Desenvolver um programa que pergunte um número de 1 a 12, e responda o mês correspondente ao número,
 //ou se o número não corresponde a nenhum dos 12 meses.
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let dia = Number(prompt(`digite um número de 1 a 12:`));
 

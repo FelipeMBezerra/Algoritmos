@@ -1,9 +1,9 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
-
 //Desafio 11
 //Desenvolver um programa que pergunte um número de 3 casas e apresente como resultado somente o
 //algarismo das centenas.
+
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 let number = Number(prompt(`Fale um número de 3 casas:`));
 
