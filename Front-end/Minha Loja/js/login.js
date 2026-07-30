@@ -1,3 +1,7 @@
+const fomulario = document.querySelector("#form");
+formulario.addEventListener("submit" , salvarFormulario);
+
+
 const togglepassword = document.getElementById('togglepassword');
 const passwordinput = document.getElementById('password');
 
